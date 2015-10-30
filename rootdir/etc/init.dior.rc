@@ -128,6 +128,14 @@ on boot
     # connections on high-throughput links get dropped when
     # an ack packet comes out of order
     write /proc/sys/net/netfilter/nf_conntrack_tcp_be_liberal 1
+    
+    # Subsytem Restart
+    #adsp
+    write /sys/bus/msm_subsys/devices/subsys0/restart_level "related"
+    #modem
+    write /sys/bus/msm_subsys/devices/subsys1/restart_level "related"
+    #venus
+    write /sys/bus/msm_subsys/devices/subsys2/restart_level "related"
 
 on post-fs-data
     mkdir /data/media 0770 media_rw media_rw
