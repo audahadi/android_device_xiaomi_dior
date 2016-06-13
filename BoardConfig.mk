@@ -22,7 +22,7 @@ TARGET_SPECIFIC_HEADER_PATH := kernel/xiaomi/dior/include
 TARGET_BOARD_KERNEL_HEADERS := device/xiaomi/dior/kernel-headers
 BOARD_CUSTOM_BOOTIMG_MK := device/xiaomi/dior/mkbootimg.mk
 TARGET_KERNEL_SOURCE := kernel/xiaomi/dior
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
 TARGET_KERNEL_CONFIG := dior_custom_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 earlyprintk androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=23 msm_rtb.filter=0x37 androidboot.bootdevice=msm_sdcc.1 androidboot.selinux=permissive
 BOARD_KERNEL_SEPARATED_DT := true
